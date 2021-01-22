@@ -1845,10 +1845,10 @@ fastparse@^1.1.2:
   resolved "https://registry.yarnpkg.com/fastparse/-/fastparse-1.1.2.tgz#91728c5a5942eced8531283c79441ee4122c35a9"
   integrity sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==
 
-file-content-reader@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/file-content-reader/-/file-content-reader-1.0.1.tgz#9bff3ad09740b895c5f02bec2d9c0b04647d13b0"
-  integrity sha512-TfvpDT/n18DXabW8jzm5UMpQMI3fynPGONOaENzZgF0BG1cnWi+9aRHyUbcwNIh/91d+kKEvkEsEVoe3D/viGg==
+file-content-reader@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/file-content-reader/-/file-content-reader-1.0.2.tgz#3cd00d2ae1c63d46d4aed3e33be366a9d373bac3"
+  integrity sha512-1rUAe1lVMmIL2S2uA1cgRcEfADq3cHWZBKdTrymrvPPoJv4JHxZTGYPUPfQoMgQ/mPtZNzoPn2XY+Us9FgSlzg==
   dependencies:
     lru-cache "^6.0.0"
 
