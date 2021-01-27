@@ -2,12 +2,12 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import App from './app';
 
-export default (res, req, styles) => {
+export default (res, req, styles = []) => {
   const content = renderToString(<App />);
-  const styleTags = styles.map(style => {
+  const styleTags = styles.map(({name, content}) => {
     return `
-      <style id="server-side-css">
-        ${Object.values(style)[0]}
+      <style id="server-side-css" data-name="${name}">
+        ${content}
       </style>
     `
   }).join('');

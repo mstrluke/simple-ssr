@@ -5,15 +5,15 @@ require('@babel/register')({
 const express = require('express');
 const path = require('path');
 const htmlTemplate = require('./htmlTemplate').default;
-const fileReader = require('file-content-reader')
+const { collectFileContent } = require('file-content-reader');
 
 
 const app = express();
 
 app.use(express.static(path.resolve(process.cwd() + '/build')));
 app.get('/*', (req, res) => {
-  const { css } = fileReader(path.resolve(process.cwd() + '/src'), ['.css', '.js']);
-  const html = htmlTemplate(res, req, css);
+  const data = collectFileContent(path.resolve(process.cwd() + '/src'), ['.css'], 'utf8');
+  const html = htmlTemplate(res, req, data.css);
   res.send(html);
 });
 app.listen(3000, console.log('Started on http://localhost:3000'));
