@@ -19,7 +19,7 @@
     "babel-plugin-css-modules-transform": "^1.6.2",
     "css-loader": "^5.0.1",
     "express": "^4.17.1",
-    "file-content-reader": "^1.0.4",
+    "file-content-reader": "^1.0.5",
     "lru-cache": "^6.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
