@@ -3,6 +3,6 @@ import './component.css';
 
 export default () => (
   <div>
-    It is a child component !!!
+    Itt is a child component !!!
   </div>
 );
