@@ -1,10 +1,13 @@
-## Make sure there is no duplicate PR for this issue
+## Description
+...
 
-name:
-title:
-labels:
-assignees:
-description:
+## Pull request type:
+
+- [ ] Bug
+- [ ] Feature
+- [ ] Documentation
+- [ ] Breaking change
+
 body:
   - type: markdown
     attributes:
